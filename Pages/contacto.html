@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6187417b25.js" crossorigin="anonymous"></script>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="/imagenes/Logotefyartesanias.jpg" height="125" width="250" class="logo" id="logoDeTefy"> 
+      <ul class="nav-menu">
+        <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Home</a></li>
+        <li class="nav-menu-item"><a href="./productos.html" class="nav-menu-link nav-link">Prodcutos</a></li>
+        <li class="nav-menu-item"><a href="./galeria.html"class="nav-menu-link nav-link" >Galeria</a></li>
+        <li class="nav-menu-item"><a href="./quienessomos.html" class="nav-menu-link nav-link">Quienes Somos</a></li>
+        <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+    <h2 class="contacto" id="cnt">Contacto</h2>
+    <section class="formulario1">
+    <form action="enviar.php" method="post" enctype="text/plain" netlify class="formulario">
+      <label class="nombre  form" for="Nombre">Nombre:</label>
+      <input type="text" name="Nombre"><br>
+      <br>
+      <label class="apellido  form" for="Apellido">Apellido:</label>
+      <input type="text" name="Apellido"><br>
+      <br>
+      <label class="correo form" for="Correo">Correo:</label>
+      <input type="email" name="Correo"><br>
+      <br>
+      <label class="comentarios  form" for="comentarios">Comentarios</label>
+      <br><textarea placeholder="Dejanos tu consulta" name="Comentarios" id="" cols="50" rows="10"></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+    <div class="imgform"></div>
+  </section>
+</main>
+<footer>
+  <p>Todos los derechos reservados por Copy Right</p>
+  <div class="redes">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+  </div>
+</footer>
+</body>
+</html>
