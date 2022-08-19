@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="estilos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +18,9 @@
 <body>
   <header class="header">
     <nav class="nav">
-    <img src="/imagenes/Logotefyartesanias.jpg" height="125" width="250" class="logo" id="logoDeTefy"> 
+      <div class="wow animate__rubberBand">
+    <img src="/imagenes/Logotefyartesanias.jpg" height="125" width="250" class="logo" id="logoDeTefy" data-aos="zoom-in">
+  </div> 
       <ul class="nav-menu">
         <li class="nav-menu-item"><a href="./index.html" class="nav-menu-link nav-link">Home</a></li>
         <li class="nav-menu-item"><a href="./Pages/productos.html" class="nav-menu-link nav-link">Prodcutos</a></li>
@@ -29,14 +33,19 @@
   <main class="banner" id="bannerTefyArtesanias">
     <img src="./imagenes/Banner1.jpg" alt="Portada-artesanias" class="banner">
   </main>
-  <footer>
-    <p>Todos los derechos reservados por Copy Right</p>
+  <footer data-aos="flip-up">
+    
+    <p class="wow bounce">Todos los derechos reservados por Copy Right</p>
+  
     <div class="redes">
       <a href="#"><i class="fa-brands fa-facebook"></i></a>
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
       <a href="#"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>
-  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
