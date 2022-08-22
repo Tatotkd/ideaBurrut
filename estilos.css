@@ -9,6 +9,20 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.navbar{
+    justify-content: space-between;
+    background-color: #bca0ff !important;
+}
+.navbar-nav a{
+    color: rgb(176, 55, 180);
+    font-weight: bold;
+    text-shadow: 0 0 2px rgb(32, 32, 32);
+}
+.navbar-nav a:hover{
+    transform: 0.5s;
+    background-color: #692469;
+    border-radius: 5px;
+}
 .grid {
     display: grid;
     grid-template-columns: auto;
@@ -153,35 +167,17 @@ section{
 }
 /* Comienzo Contacto */
 
-.contacto {
-    background-color: #ffa0b0;
-    padding: 0px 15px;
-    text-align: left;
-}
-
-.formulario1 {
-    display: flex;
-    background-color: #ffa0b0;
-    width: 100%;
-    height: auto;
-    
-}
 
 .formulario{
     background-color: #ffa0b0;
     width: 35%;
     height: auto;
     padding: 10px 20px;
+    margin: 0;
 }
-
-.imgform{
-    display: flex;
+.imagen-left{
     background-image: url(./imagenes/Hilos.jpg);
-    width:50%;
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-
+    height: auto;
 }
 
 
