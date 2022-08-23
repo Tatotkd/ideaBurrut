@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -7,11 +9,34 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.navbar{
+    justify-content: space-between;
+    background-color: #bca0ff !important;
+}
+.navbar-nav a{
+    color: rgb(176, 55, 180);
+    font-weight: bold;
+    text-shadow: 0 0 2px rgb(32, 32, 32);
+}
+.navbar-nav a:hover{
+    transform: 0.5s;
+    background-color: #692469;
+    border-radius: 5px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
 .header {
 /*     background-color: rgb(178, 177, 177); */
+grid-area: header;
 background-color:  #bca0ff;
-    height: 80px;
+    height: auto;
     width: 100%;
 }
 
@@ -55,12 +80,18 @@ background-color:  #bca0ff;
     transition: 0.5s;
 }
 
-
+.main {
+    grid-area: main;
+}
 .banner {
     width: 100%;
     padding: 0;
     margin: 0;
     height: 853px;
+}
+
+.footer {
+    grid-area: footer;
 }
 footer {
     background-color:  #bca0ff;
@@ -136,33 +167,59 @@ section{
 }
 /* Comienzo Contacto */
 
-.contacto {
-    background-color: #ffa0b0;
-    padding: 0px 15px;
-    text-align: left;
-}
-
-.formulario1 {
-    display: flex;
-    background-color: #ffa0b0;
-    width: 100%;
-    height: auto;
-    
-}
 
 .formulario{
     background-color: #ffa0b0;
-    width: 35%;
     height: auto;
     padding: 10px 20px;
+    margin: 0;
+    padding: 0;
 }
-
-.imgform{
-    display: flex;
+.imagen-left{
     background-image: url(./imagenes/Hilos.jpg);
-    width:50%;
-    height: 350px;
+    height: auto;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-
 }
+
+
+/* MEDIA QUERY PARA VISTA CELULAR */
+
+@media only screen and (max-width: 600px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .header {
+        /*     background-color: rgb(178, 177, 177); */
+        grid-area: header;
+        background-color:  #bca0ff;
+            height: auto;
+            width: 100%;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        
+        }
+
+        .nav-menu{
+    
+                display: flex;
+                margin-right: 0;
+                list-style: none;
+                flex-direction: column;
+                background-color: white;
+            
+        }
+   
+  }

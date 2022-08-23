@@ -4,44 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6187417b25.js" crossorigin="anonymous"></script>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <img src="/imagenes/Logotefyartesanias.jpg" height="125" width="250" class="logo" id="logoDeTefy"> 
-      <ul class="nav-menu">
-        <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Home</a></li>
-        <li class="nav-menu-item"><a href="./productos.html" class="nav-menu-link nav-link">Prodcutos</a></li>
-        <li class="nav-menu-item"><a href="./galeria.html"class="nav-menu-link nav-link" >Galeria</a></li>
-        <li class="nav-menu-item"><a href="./quienessomos.html" class="nav-menu-link nav-link">Quienes Somos</a></li>
-        <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-<main>
-    <h2 class="contacto" id="cnt">Contacto</h2>
-    <section class="formulario1">
-    <form action="enviar.php" method="post" enctype="text/plain" netlify class="formulario">
-      <label class="nombre  form" for="Nombre">Nombre:</label>
-      <input type="text" name="Nombre"><br>
-      <br>
-      <label class="apellido  form" for="Apellido">Apellido:</label>
-      <input type="text" name="Apellido"><br>
-      <br>
-      <label class="correo form" for="Correo">Correo:</label>
-      <input type="email" name="Correo"><br>
-      <br>
-      <label class="comentarios  form" for="comentarios">Comentarios</label>
-      <br><textarea placeholder="Dejanos tu consulta" name="Comentarios" id="" cols="50" rows="10"></textarea>
-      <input type="submit" value="Enviar">
-    </form>
-    <div class="imgform"></div>
-  </section>
+  <!-- Comienzo de navbar boostrap -->
+  <nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand" href="#">
+      <img src="../imagenes/Logotefyartesanias.jpg" alt="Logo" width="135px" height="70px" class="logoTefy">
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./galeria.html">Galeria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./productos.html">Producto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./quienessomos.html">Quienes Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Fin de navbar boostrap -->
+  <!-- Comienzo de main -->
+  <main class="conteiner-fluid">
+    <div class="row">
+  <div class="col-lg-6">
+  <form class="formulario">
+    <!-- Name input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form4Example1">Nombre</label>
+      <input type="text" id="form4Example1" class="form-control" />
+
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form4Example2">Correo electronico</label>
+      <input type="email" id="form4Example2" class="form-control" />
+    </div>
+  
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form4Example3">Mensaje</label>
+      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+    </div>
+  
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+  </form>
+</div>
+  <div class="imagen-left col-lg-6">
+    <!-- <img src="../imagenes/Coser1.webp" alt=""> -->
+  </div>
+</div>
 </main>
+
+
+  <!-- Fin de main -->
 <footer>
   <p>Todos los derechos reservados por Copy Right</p>
   <div class="redes">
@@ -50,5 +80,14 @@
     <a href="#"><i class="fa-brands fa-twitter"></i></a>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+  </script>
 </body>
 </html>
