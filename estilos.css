@@ -170,14 +170,16 @@ section{
 
 .formulario{
     background-color: #ffa0b0;
-    width: 35%;
     height: auto;
     padding: 10px 20px;
     margin: 0;
+    padding: 0;
 }
 .imagen-left{
     background-image: url(./imagenes/Hilos.jpg);
     height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
